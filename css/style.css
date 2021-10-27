@@ -1,0 +1,500 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  background-color: white;
+  width: 100%;
+}
+
+.header {
+  background-color: white;
+  color: black;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 95%;
+  padding: 2.5%;
+  height: 40px;
+  z-index: 1;
+}
+
+.logo {
+  width: 160px;
+  padding: 10px;
+  margin: 15px;
+  z-index: 111;
+  margin-left: -1000px;
+  transition: 0.5s;
+  animation-name: slideIn;
+  animation-duration: 0.5s;
+  animation-delay: 0.1s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes slideIn {
+  from {
+    margin-left: -1000px;
+  }
+  to {
+    margin-left: 0;
+  }
+}
+
+.sticky-navbar {
+  background: linear-gradient(
+    0deg,
+    rgb(28, 183, 185) 0%,
+    rgb(172, 24, 192) 100%
+  );
+  border-radius: 10px 30px;
+  display: flex;
+  flex-direction: row-reverse;
+  position: fixed;
+  top: 10px;
+  right: 0;
+  padding: 10px;
+  padding-top: 15px;
+  background-color: transparent;
+  text-decoration: none;
+  color: black;
+  z-index: 1;
+}
+
+.sticky-navbar i {
+  margin-top: 2px;
+  text-decoration: none;
+  color: rgb(219, 219, 219);
+  padding: 10px;
+}
+
+.sticky-navbar:hover a {
+  display: block;
+}
+
+.sticky-navbar a {
+  display: none;
+}
+
+.link-wrapper {
+  position: relative;
+  right: 30%;
+}
+
+.link-wrapper a {
+  text-decoration: none;
+  color: black;
+  padding: 10px 20px;
+  font-weight: bold;
+  transition: 0.5s;
+}
+
+.link-wrapper a:hover {
+  color: rgba(94, 4, 240, 0.836);
+  font-size: 17px;
+}
+
+#home-section {
+  position: relative;
+  width: 100%;
+}
+
+#home-section video {
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+  z-index: 1;
+}
+
+.home-video-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.432);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.home-video-overlay h1 {
+  color: white;
+  font-size: 50px;
+}
+
+.home-video-overlay a {
+  text-decoration: none;
+  text-transform: uppercase;
+  background-color: rgb(255, 255, 255);
+  color: black;
+  padding: 20px 25px;
+  margin: 30px;
+  display: block;
+  letter-spacing: 2px;
+  border-radius: 5px 30px;
+  font-size: 18px;
+  box-shadow: inset 0 0 0 0 rgba(7, 23, 165, 0.541);
+}
+
+.home-video-overlay a:hover {
+  color: white;
+  transition: 0.4s;
+  box-shadow: inset 400px 0 0 0 rgba(7, 23, 165, 0.541);
+}
+
+.section {
+  min-height: 60vh;
+  margin: 40px;
+}
+
+.section h1 {
+  text-align: center;
+}
+
+#services-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.service-card {
+  width: 250px;
+  margin: 20px;
+  background-image: url(..//media/img/white-background.jpg);
+  background-position: center;
+  background-size: cover;
+  border-radius: 10px 50px;
+  min-height: 40vh;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  transition: 0.5s;
+}
+
+.service-card:hover {
+  transform: scale(1.01);
+}
+
+.service-card p {
+  padding: 20px;
+}
+
+.service-card-header {
+  width: auto;
+  background-color: rgb(69, 13, 143);
+  background-position: center;
+  background-size: cover;
+  color: white;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.service-card-header i {
+  border-radius: 10px 20px;
+  background-color: rgb(113, 46, 201);
+  border: 2px solid white;
+  padding: 15px;
+  font-size: 20px;
+}
+
+.header-image1 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.5)),
+    url(..//media/img/frontend.jpg);
+}
+
+.header-image2 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.5)),
+    url(..//media/img/backend.jpg);
+}
+
+.header-image3 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.5)),
+    url(..//media/img/uxdesign.jpg);
+}
+
+.header-image4 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.5)),
+    url(..//media/img/coaching.png);
+}
+
+#about-section {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../media/img/developer-wallpaper.jpg");
+  margin: 0;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.about-image-wrapper,
+.about-text-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#about-section img {
+  width: 50vh;
+  height: 50vh;
+  object-fit: cover;
+  border: 5px solid rgb(255, 255, 255);
+  border-radius: 10px 50px;
+  padding: 10px;
+}
+
+.about-text-wrapper {
+  padding-right: 25%;
+  color: white;
+  max-width: 250px;
+}
+
+.about-text-wrapper h2 {
+  border-bottom: 2px solid rgb(255, 255, 255);
+  padding-bottom: 30px;
+  margin-bottom: 30px;
+  font-size: 40px;
+}
+
+.about-text-wrapper p {
+  line-height: 25px;
+}
+
+.about-text-wrapper {
+  margin: 20px;
+}
+
+.about-image-wrapper {
+  margin-top: 20px;
+}
+
+#contact-section {
+  text-align: center;
+}
+
+.contact-card-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  height: auto;
+}
+
+.card {
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  background-color: #5f21c2;
+  color: aliceblue;
+  width: 300px;
+  padding: 20px;
+  margin: 40px;
+  text-align: center;
+  border-radius: 10px 50px;
+  transition: 0.5s;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.profile-img-1 {
+  width: 200px;
+  padding: 10px;
+  border: 3px solid white;
+  border-radius: 50%;
+}
+
+.card-title {
+  color: grey;
+  font-size: 18px;
+}
+
+.contact-card-social-icon i {
+  margin: 0 5px;
+}
+
+.card-button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  margin-bottom: 10px;
+  color: #5e21c2;
+  background-color: white;
+  text-align: center;
+  cursor: pointer;
+  width: 70%;
+  font-size: 18px;
+  border-radius: 5px 20px;
+}
+
+a {
+  text-decoration: none;
+  font-size: 22px;
+  color: rgb(255, 255, 255);
+}
+
+a:hover {
+  color: aqua;
+  transition: 0.5s;
+}
+
+#card-button-1:hover {
+  background-color: #4cbcaf;
+  color: white;
+  font-weight: bold;
+  transition: 0.5s;
+}
+
+#card-button-2:hover {
+  background-color: #c55a9f;
+  color: white;
+  font-weight: bold;
+  transition: 0.5s;
+}
+
+#card-button-3:hover {
+  background-color: #f58f49;
+  color: white;
+  font-weight: bold;
+  transition: 0.5s;
+}
+
+#social-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#social-section h2 {
+  font-size: 50px;
+}
+
+.social-icons-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.social-icons-wrapper i {
+  margin: 20px;
+  font-size: 45px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.social-icons-wrapper i:hover {
+  color: rgb(1, 177, 147);
+  transition: 0.5s;
+}
+
+footer {
+  background-color: #5e21c2;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0px;
+}
+
+.logo-footer {
+  width: 200px;
+  padding: 10px;
+  margin: 10px;
+  margin-top: 40px;
+}
+
+.contact-info-wrapper {
+  margin: 50px 0px;
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact-info-wrapper p,
+.contact-info-wrapper a,
+.contact-info-wrapper i {
+  color: white;
+  font-size: 25px;
+  margin: 10px 0;
+}
+
+.contact-info-wrapper a {
+  margin-left: 10px;
+}
+
+.contact-info-wrapper a:hover {
+  margin-left: 20px;
+}
+
+@media screen and (max-width: 1000px) {
+  .link-wrapper {
+    visibility: hidden;
+  }
+
+  .home-video-overlay h1 {
+    width: 100%;
+    text-align: center;
+  }
+
+  .footer-distributed {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    padding-bottom: 20px;
+    margin-bottom: 10px;
+  }
+
+  .header h1 {
+    width: 100%;
+    text-size-adjust: auto;
+  }
+
+  #about-section {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    background-attachment: scroll;
+  }
+  .about-text-wrapper {
+    max-width: 300px;
+    padding-right: 0;
+  }
+
+  .sticky-navbar {
+    flex-direction: column;
+    transform: scale(0.8);
+    margin: 0;
+    padding: 0;
+  }
+
+  .header {
+    transform: scale(0.8);
+    text-align: center;
+  }
+
+  .contact-section img {
+    margin-right: 5%;
+    margin-left: 5%;
+  }
+}
+
+@media screen and (max-width: 530px) {
+  body {
+    width: 100vh;
+    height: auto;
+  }
+}
