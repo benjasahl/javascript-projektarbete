@@ -202,22 +202,22 @@ body {
 
 .header-image1 {
   background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.5)),
-    url(..//media/img/frontend.jpg);
+    url(..//media/img/saving.jpg);
 }
 
 .header-image2 {
   background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.5)),
-    url(..//media/img/backend.jpg);
+    url(..//media/img/feeding.jpg);
 }
 
 .header-image3 {
   background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.5)),
-    url(..//media/img/uxdesign.jpg);
+    url(../media/img/transport.jpg);
 }
 
 .header-image4 {
   background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.5)),
-    url(..//media/img/coaching.png);
+    url(..//media/img/teaching.jpg);
 }
 
 /*Gallery section */
