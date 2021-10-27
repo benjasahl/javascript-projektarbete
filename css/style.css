@@ -220,6 +220,12 @@ body {
     url(..//media/img/coaching.png);
 }
 
+/*Gallery section */
+#gallery-image {
+  height: 300px;
+  width: auto;
+}
+
 #about-section {
   height: 100vh;
   display: grid;
