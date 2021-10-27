@@ -17,6 +17,10 @@ body {
   z-index: 1;
 }
 
+header h1{
+  font-family:'Courier New', Courier, monospace;
+}
+
 .sticky-navbar {
   background: linear-gradient(
     0deg,
@@ -211,6 +215,7 @@ body {
   height: auto;
   display: flex;
   flex-direction: column;
+  align-items: center;
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url("../media/img/background-jungle.jpg");
   margin: 0;
@@ -393,7 +398,7 @@ a:hover {
 }
 
 footer {
-  background-color: rgb(122, 80, 55);
+  background-color: rgb(128, 105, 92);
   color: rgba(235, 235, 235, 0.904);
   display: flex;
   flex-direction: column;
@@ -402,11 +407,9 @@ footer {
   padding: 0px;
 }
 
-.logo-footer {
-  width: 200px;
-  padding: 10px;
-  margin: 10px;
-  margin-top: 40px;
+footer h1{
+  font-family:'Courier New', Courier, monospace;
+  font-size: 50px;
 }
 
 .contact-info-wrapper {
