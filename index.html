@@ -5,7 +5,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Front Friends</title>
+    <title>VBA Animalcare</title>
     <meta name="description" content="Make great projects">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/style.css">
@@ -20,7 +20,6 @@
             <a href="#home-section">Home</a>
             <a href="#services-section">Services</a>
             <a href="#gallery-section">Gallery</a>
-            <a href="#about-section">About</a>
             <a href="#contact-section">Contact</a>
         </nav>
     </header>
@@ -34,13 +33,11 @@
         <br>
         <a href="#gallery-section"><i class="far fa-images fa-2x"></i></a>
         <br>
-        <a href="#about-section"><i class="far fa-address-card fa-2x"></i></a>
-        <br>
         <a href="#contact-section"><i class="fas fa-headset fa-2x"></i></a>
     </div>
 
     <section id="home-section">
-        <video width="500" autoplay muted loop>
+        <video autoplay muted loop>
             <source src="./media/video/video.mp4" type="video/mp4">
         </video>
 
@@ -92,36 +89,51 @@
         </article>
     </section>
 
+    <div id="gallery-modal-wrapper">
+        <div class="gallery-modal">
+            <div class="gallery-header">
+                <span id="close-gallery"><i class="fa fa-times"></i></span>
+            </div>
+            <div id="gallery-modal-content">
+                <img id="start-image" src="">
+
+                <span id="prev-img"><i class="fas fa-angle-left fa-2x"></i></span>
+                <span id="next-img"><i class="fas fa-angle-right fa-2x"></i></span>
+
+            </div>
+            <div id="thumbnails-wrapper">
+
+            </div>
+        </div>
+    </div>
+
     <section id="gallery-section" class="section">
         <h1>Gallery</h1>
         <div id="image-container">
-            <img id="gallery-image" src="./media/img/gallery-bunny.jpg" alt="gallery-bunny">
-            <img id="gallery-image" src="./media/img/gallery-elephant.jpg" alt="gallery-elephant">
-            <img id="gallery-image" src="./media/img/gallery-monkeys.jpg" alt="gallery-monkeys">
-            <img id="gallery-image" src="./media/img/gallery-panda.jpg" alt="gallery-panda">
-            <img id="gallery-image" src="./media/img/gallery-parrot.jpg" alt="gallery-parrot">
+            <img class="image" id="gallery-image" src="./media/img/gallery-dolphins.jpg" alt="gallery-dolphins">
+            <img class="image" id="gallery-image" src="./media/img/gallery-monkeys.jpg" alt="gallery-monkeys">
+            <img class="image" id="gallery-image" src="./media/img/gallery-panda.jpg" alt="gallery-panda">
+            <img class="image" id="gallery-image" src="./media/img/gallery-seal.jpg" alt="gallery-seal">
+            <img class="image" id="gallery-image" src="./media/img/gallery-lion.jpg" alt="gallery-lion">
+            <img class="image" id="gallery-image" src="./media/img/gallery-alpacka.jpg" alt="gallery-alpacka">
+            <img class="image" id="gallery-image" src="./media/img/gallery-penguin.jpg" alt="gallery-penguin">
         </div>
 
     </section>
 
-    <span class="close">&times;</span>
 
-    <section id="about-section" class="section">
-        <div class="about-image-wrapper">
-            <img src="media/img/about.png" alt="A picture of me">
+    <div id="card-modal-wrapper">
+        <div class="card-modal">
+            <div class="card-header">
+                <span id="close-card"><i class="fa fa-times"></i></span>
+            </div>
+            <div id="card-modal-content"></div>
         </div>
-        <div class="about-text-wrapper">
-            <article>
-                <h2>About us</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel veritatis ducimus voluptates, quasi odit
-                    repudiandae blanditiis eligendi quibusdam cupiditate, autem similique vero voluptatibus aliquid
-                    magni facere quia alias corporis numquam?</p>
-            </article>
-        </div>
-    </section>
+
+    </div>
 
     <h1 id="contact-section">Contact</h1>
-    <div class="contact-card-section">
+    <div class="contact-card-section" id="contact-cards">
         <div class="card">
             <img class="profile-img-1" src="./media/img/1012770.png" alt="Pingu Penguin">
             <h1>Pingu Penguin</h1>
