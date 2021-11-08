@@ -73,8 +73,7 @@ header h1 {
 }
 
 .link-wrapper a:hover {
-  color: rgba(94, 4, 240, 0.836);
-  font-size: 17px;
+  color: rgba(64, 112, 64, 0.836);
 }
 
 #home-section {
@@ -168,7 +167,6 @@ header h1 {
 
 .service-card-header {
   width: auto;
-  background-color: rgb(69, 13, 143);
   background-position: center;
   background-size: cover;
   color: white;
@@ -182,7 +180,6 @@ header h1 {
 
 .service-card-header i {
   border-radius: 10px 20px;
-  background-color: rgb(113, 46, 201);
   border: 2px solid white;
   padding: 15px;
   font-size: 20px;
