@@ -408,52 +408,6 @@ footer h1 {
   margin-left: 20px;
 }
 
-@media screen and (max-width: 1000px) {
-  .link-wrapper {
-    display: none;
-  }
-
-  .header {
-    text-align: center;
-    justify-content: center;
-  }
-
-  #home-section h1 {
-    text-align: center;
-    font-size: 30px;
-  }
-
-  #home-section a {
-    width: 50%;
-  }
-
-  #gallery-section {
-    background: none;
-    background-color: rgb(64, 112, 64);
-  }
-
-  #gallery-image {
-    width: 40%;
-    height: auto;
-  }
-
-  #card-modal-content {
-    overflow: scroll;
-    padding-top: 150px;
-  }
-
-  .card-header {
-    position: sticky;
-    top: 0;
-  }
-
-  .sticky-navbar {
-    transform: scale(0.6);
-    margin: 0;
-    padding: 0;
-  }
-}
-
 /*Modal styling*/
 
 #card-modal-wrapper,
@@ -574,4 +528,66 @@ footer h1 {
   height: 80%;
   width: auto;
   margin-right: 10px;
+}
+
+/*Media*/
+
+@media screen and (max-width: 1000px) {
+  .card-modal-wrapper,
+  .gallery-modal-wrapper {
+    height: 150vh;
+  }
+
+  #gallery-modal-content img {
+    width: auto;
+    height: 55%;
+  }
+
+  .link-wrapper {
+    display: none;
+  }
+
+  .header {
+    text-align: center;
+    justify-content: center;
+  }
+
+  #home-section h1 {
+    text-align: center;
+    font-size: 30px;
+  }
+
+  #home-section a {
+    width: 50%;
+  }
+
+  #gallery-section {
+    background: none;
+    background-color: rgb(64, 112, 64);
+  }
+
+  #gallery-image {
+    width: 40%;
+    height: auto;
+  }
+
+  #card-modal-content {
+    overflow: scroll;
+    padding-top: 20%;
+  }
+
+  .card-header {
+    position: sticky;
+    top: 0;
+  }
+
+  .sticky-navbar {
+    transform: scale(0.6);
+    margin: 0;
+    padding: 0;
+  }
+
+  #thumbnails-wrapper {
+    overflow: scroll;
+  }
 }
